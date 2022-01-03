@@ -1,0 +1,114 @@
+:root {
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 12;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  border-bottom: 2px solid #999999;
+  border
+  width: 100%;
+  height: 45px;
+}
+
+nav {
+  width: auto;
+  height: 35px;
+  float: right;
+  margin-top: 5px;
+}
+
+.nav-button {
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 15px;
+  height: 100%;
+  margin-right: 5px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition-duration: 0.4s;
+}
+
+.nav-button:hover{
+  background-color: #666666;
+  color: white;
+  cursor: pointer;
+}
+
+#filltop {
+  width: 100%;
+  height: 45px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#anim-text {
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  width: 180px;
+  float: left;
+}
+
+#anim-text::before,
+#anim-text::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+}
+
+#anim-text::before {
+  background: white;
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 0.25s forwards;
+}
+
+#anim-text::after {
+  width: 0.13em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 0.25s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  from { left: 0px; }
+  to { left: 180px; }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
