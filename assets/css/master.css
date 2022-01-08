@@ -148,6 +148,12 @@ p {
   font-size: 20px;
 }
 
+#anim-text-box {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
 #anim-text {
   position: relative;
   font-family: "Source Code Pro", monospace;
@@ -188,7 +194,7 @@ p {
 
 @keyframes typewriter {
   from { left: 0px; }
-  to { left: auto; }
+  to { left: 100%; }
 }
 
 @keyframes blink {
