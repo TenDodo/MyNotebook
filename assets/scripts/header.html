@@ -1,28 +1,12 @@
-<header id="navbar">
+<div id="navbar">
   <div id="anim-text-box">
   <a href="https://tendodo.github.io/MyNotebook/"><h1 id="anim-text">My Notebook.</h1></a>
   </div>
   <nav>
     <button class="nav-button" type="button" onclick="location.href='/MyNotebook/about/'"><b>About</b></button>
   </nav>
-</header>
-<!--
+</div>
+
 <div id="filltop">
 
 </div>
--->
-<script>
-window.onload = function() {stickNavbar()}
-
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function stickNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  }
-}
-
-
-</script>
