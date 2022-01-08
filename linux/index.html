@@ -3,40 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="/MyNotebook/css/master.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
   <title>My Notebook.</title>
 </head>
 <body>
-  <header id="navbar">
-    <a href="https://tendodo.github.io/MyNotebook/"><h1 id="anim-text">My Notebook.</h1></a>
-    <nav>
-      <button class="nav-button" type="button" onclick="location.href='https://tendodo.github.io/MyNotebook/about/'"><b>About</b></button>
-    </nav>
-  </header>
-  <div id="filltop">
-
-  </div>
+  <?php $IPATH = "../php/";
+      include($IPATH."header.html"); ?>
   <div class="main-content">
     <h1>Linux</h1>
     <p>Linux is a family of open-source Unix-like operating systems based on the Linux kernel.</p>
     <hr>
     </div>
-
-
-
-<script>
-window.onload = function() {stickNavbar()}
-
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function stickNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  }
-}
 
 </script>
 </body>

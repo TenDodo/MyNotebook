@@ -3,20 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="/MyNotebook/css/master.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
   <title>My Notebook.</title>
 </head>
 <body>
-  <header id="navbar">
-    <a href="https://tendodo.github.io/MyNotebook/"><h1 id="anim-text">My Notebook.</h1></a>
-    <nav>
-      <button class="nav-button" type="button" onclick="location.href='https://tendodo.github.io/MyNotebook/about/'"><b>About</b></button>
-    </nav>
-  </header>
-  <div id="filltop">
-
-  </div>
+  <?php $IPATH = "../php/";
+    include($IPATH."header.html"); ?>
   <div class="main-content">
     <h1>About</h1>
     <p>This website is a small project of a bored high school student who wanted to share his knowledge related to computer science with others. The website was created as an amateur and the content placed on it is based on the author's knowledge and on information and documentation found on the Internet. Although the information posted on the site is not of the highest quality and does not fully cover topics, I deeply believe that one day they will help you with something.</p>
@@ -39,21 +32,5 @@
       </div>
     </div>
 
-
-
-<script>
-window.onload = function() {stickNavbar()}
-
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function stickNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  }
-}
-
-</script>
 </body>
 </html>
