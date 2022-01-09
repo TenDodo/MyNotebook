@@ -57,12 +57,19 @@ h1 {
   text-align: center;
 }
 
+
 .main-content hr {
   height: 2px;
   border-width: 0;
   color: #999999;
   background-color: #999999;
   width: 90%;
+}
+
+.meme {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .categories-grid {
@@ -135,6 +142,8 @@ h1 {
     width: 100%;
     text-decoration: none;
 }
+
+
 
 #filltop {
   width: 100%;
