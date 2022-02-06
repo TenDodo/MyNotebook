@@ -1,0 +1,48 @@
+.container-rounded-master {
+  border: 2px solid #999999;
+  border-radius: 10px;
+}
+.container-inner-top {
+  border-bottom: 2px solid #999999;
+  display: flex;
+}
+
+.container-inner-top img {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  object-fit: scale-down;
+}
+.container-inner-top p {
+  font-size: 30px;
+  height: 70px;
+  padding: 5px;
+  margin-top: auto;
+  height: 100%;
+  margin-bottom: auto;
+}
+
+.container-right {
+  float: right;
+  text-align: right;
+  margin-top: auto;
+  height: 100%;
+  margin-bottom: auto;
+  margin-left: auto;
+  display: flex;
+}
+
+.pill-container {
+  margin-top: auto;
+  height: 100%;
+  margin-bottom: auto;
+  border-radius: 100px;
+  min-width: 100px;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.container-inner{
+  margin: 5px;
+}
