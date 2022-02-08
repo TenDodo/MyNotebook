@@ -11,10 +11,31 @@
   <script id="header-placeholder" src="/MyNotebook/assets/scripts/header.js"></script>
   <div class="main-content">
     <h1>Linux filesystem</h1>
-    <p></p>
+    <p>The file system in Linux is different from that in Windows. Unix-like systems use a standard that defines the placement of files and directories called Filesystem Hierarchy Standard (FHS). In the FHS, all files and directories appear under the root directory, even if they are stored on different physical or virtual devices.</p>
     <hr>
-
+    <h1>Shorthand command referring to directories</h1>
+    <p><code>/</code> - refers to the root directory.</p>
+    <p><code>~</code> - refers to the currently used user directory.</p>
+    <hr>
+    <h1>Directory structure</h1>
+    <p><code>/</code> - Root directory of the entire file system hierarchy.</p>
+    <p><code>/bin</code> - Contains essential binaries and executables that can be run from the command line at any time (e.g. cat, ls, cp).</p>
+    <p><code>/sbin</code> - Essential system binaries that can be run by root user (e.g. fsck, init, route).</p>
+    <p><code>/lib</code> - Libraries essential for the binaries in /bin and /sbin.</p>
+    <p><code>/lib32</code> or <code>/lib64</code> - Alternate format essential libraries. These are typically used on systems that support more than one executable code format, such as systems supporting 32-bit and 64-bit versions of an instruction set.</p>
+    <p><code>/usr</code> - Not essential read-only user data. Contains the majority of multi-user utilities and applications. It has its own <code>/usr/bin</code>, <code>/usr/sbin</code>, <code>/usr/lib</code>, <code>/usr/lib&lt;qual&gt;</code> directories. It also contain <code>/usr/include</code> (standard include files), <code>/usr/local</code> (tertiary hierarchy for local data, specific to this host, it also contains its own <code>/usr/local/bin</code> directory with manually compiled files), <code>/usr/share</code> (architecture-independent shared data), <code>/usr/src</code> (source code e.g. the kernel source code).</p>
+    <p><code>/etc</code> - Host-specific system-wide configuration files. Many of files here are text-based config files that can be modified mostly with sudo privileges.</p>
+    <p><code>/home</code> - User's home directories, containing saved files, personal settings, etc. Each user has its own directory here called by their username.</p>
+    <p><code>/boot</code> - Files needed to boot the system (e.g. boot loader, kernels, initrd).</p>
+    <p><code>/dev</code> - Device files. In this folder hardware and drivers are represented as regular files. Here we can find files like <code>/dev/sda1</code> (physical disk partitions), <code>/dev/tty</code> (special file, representing the terminal for the current process), <code>/dev/random</code> (special file that serve as pseudorandom number generator).</p>
+    <p><code>/opt</code> - Optional or add-on software.</p>
+    <p><code>/var</code> - Variable files that will change as the operating system is being used (logs and cache files).</p>
+    <p><code>/tmp</code> - Directory for temporary files that are often not preserved between system reboots.</p>
+    <p><code>/proc</code> - This directory doesn't exist on the disk. It's being created every time the system starts up to keep track of running processes.</p>
+    <hr>
+    <img class="meme" src="https://styles.redditmedia.com/t5_2ykcc/styles/image_widget_pifwg495jvr41.png" alt="image not found" width="390px" height="auto">
     </div>
+
 
 </body>
 </html>

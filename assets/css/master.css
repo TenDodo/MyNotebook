@@ -215,3 +215,14 @@ p {
     transform: translateY(0);
   }
 }
+
+
+code {
+  background-color: #ffffcd;
+  color: #000;
+  border: 1px solid #fedb70;
+  border-radius: 2px;
+  padding: 1px 4px;
+  box-shadow: 0 2px 4px 0 gray;
+  line-height: 1.6;
+}
