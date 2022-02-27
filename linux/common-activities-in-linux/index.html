@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/MyNotebook/assets/css/master.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+  <title>My Notebook.</title>
+
+
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./Chmod Calculator_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./Chmod Calculator_files/custom.css" rel="stylesheet">
+  <meta name="google-site-verification" content="AYtiSRi37PsuaOLzQxjT-CHXJM0eUoLeHEP6ygddM-s">
+
+
+
+
+
+
+</head>
+<body>
+  <script id="header-placeholder" src="/MyNotebook/assets/scripts/header.js"></script>
+  <div class="main-content">
+    <h1>Common activities in Linux</h1>
+    <p>Some activities in linux, such as updating, are performed frequently and repetitively</p>
+    <hr>
+    <h1>System update</h1>
+    <p>Debian and similar systems (Ubuntu, Linux Mint, Pop!_OS, etc.):</p>
+    <p><code>sudo apt update && sudo apt upgrade</code></p>
+    <p>Red Hat and similar systems (Fedora, CentOS, ClearOS, etc.):</p>
+    <p><code>sudo dnf upgrade</code></p>
+    <p>Arch Linux and similar systems (Manjaro, Garuda Linux, ArcoLinux, etc.):</p>
+    <p><code>sudo pacman -Syu</code></p>
+    <p>Slackware and similar systems:</p>
+    <p><code>sudo slackpkg update gpg && sudo slackpkg update</code></p>
+    <p>Gentoo and similar systems:</p>
+    <p><code>sudo emerge --sync && sudo emerge --update --deep --with-bdeps=y @world</code></p>
+    <hr>
+    <h1>Installing software</h1>
+    <p>Debian and similar systems:</p>
+    <p><code>sudo apt install <i>&lt;package_name&gt;</i></code></p>
+    <p>Red Hat and similar systems:</p>
+    <p><code>sudo yum install <i>&lt;package_name&gt;</i></code></p>
+    <p>Arch Linux and similar systems:</p>
+    <p><code>sudo pacman -S <i>&lt;package_name&gt;</i></code></p>
+    <p>Slackware and similar systems:</p>
+    <p><code>sudo slackpkg install <i>&lt;package_name&gt;</i></code></p>
+    <p>Gentoo and similar systems:</p>
+    <p><code>sudo emerge -av <i>&lt;package_name&gt;</i></code></p>
+    <hr>
+    <h1>Adding user</h1>
+    <p><code>sudo useradd -m <i>&lt;user&gt;</i> -s /bin/bash</code> - create a user and set <code>/bin/bash</code> to its default shell</p>
+    <p><code>sudo passwd <i>&lt;user&gt;</i></code> - giving a password to the user</p>
+    <p><code>sudo usermod -a -G <i>&lt;group&gt;</i> <i>&lt;user&gt;</i></code> - adding user to group</p>
+
+
+
+
+
+    </div>
+</body>
+</html>
